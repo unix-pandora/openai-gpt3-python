@@ -36,6 +36,3 @@ def getResp(puzzle):
     print(respondMsg)
 
     return respondMsg
-
-
-# getResp(puzzle)
