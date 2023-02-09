@@ -5,11 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# puzzle = 'what is the lagest lake in the world?'
 
-
-def getResp(puzzle):
-    print(puzzle)
+def inquiry(puzzle):
+    print('inquiries: '+puzzle)
 
     response = openai.Completion.create(
         engine="text-davinci-003",

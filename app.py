@@ -38,8 +38,8 @@ def checkStrEmpty(puzzle_str):
     verifySpace = puzzle_str.isspace()
     print("strLen: " + str(strLen)+" , verifySpace: " + str(verifySpace))
 
-    if strLen == 0 or verifySpace == True:
-        print("问题内容为空,无法提交,请重新输入问题")
+    if strLen < 3 or verifySpace == True:
+        print("问题内容不足,无法提交,请重新输入问题")
         lengthFlag = False
 
     return lengthFlag
@@ -60,7 +60,7 @@ def detectOverLimitLen(puzzle_str):
 
 def writeResp2File(puzzle_str):
     # 向openai提问,并获取回答
-    answerText = kits.Robot.getResp(puzzle_str)
+    answerText = kits.Robot.inquiry(puzzle_str)
 
     # 将答案追加写入另一个文件
     kits.Write2File.write_by_pattern(
