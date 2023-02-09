@@ -39,7 +39,7 @@ def checkStrEmpty(puzzle_str):
     print("strLen: " + str(strLen)+" , verifySpace: " + str(verifySpace))
 
     if strLen < 3 or verifySpace == True:
-        print("问题内容不足,无法提交,请重新输入问题")
+        print("问题内容的字数不足,无法提交,请重新输入问题")
         lengthFlag = False
 
     return lengthFlag
