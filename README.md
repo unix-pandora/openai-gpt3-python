@@ -9,7 +9,7 @@ Call the GPT-3 official model interface based on python to realize the effect of
 
 <hr>
 
-# Dependency
+# Install Dependency
 
 ```
 #Temporarily install the specified dependency from the image source
@@ -48,14 +48,6 @@ touch last-ask-question.txt;
 
 <hr>
 
-# Installation dependency
-
-```
-pip install -r requirements.txt
-```
-
-<hr>
-
 # Operation
 
 - Step 1: When starting the project for the first time, enter the question in 'txt/ask-question. txt'
@@ -86,7 +78,7 @@ python3 app.py
 
 <hr>
 
-# 依赖
+# 安装依赖
 
 ```
 
@@ -124,14 +116,6 @@ touch txt/receive-result.txt;
 # 上一轮问答完毕中的提问会暂存在此处
 touch last-ask-question.txt;
 
-```
-
-<hr>
-
-# 安装依赖
-
-```
-pip install -r requirements.txt
 ```
 
 <hr>
