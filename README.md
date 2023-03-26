@@ -35,7 +35,7 @@ pip install -r requirements.txt
 Create the 'txt' folder under the project root directory, and create `ask-question.txt`, `receive-result.txt`, and `last-ask-question.txt` under this folder respectively
 
 ```
-mkdir txt;
+mkdir -p ./txt;
 #Enter the question here
 touch txt/ask-question.txt;
 
@@ -43,7 +43,7 @@ touch txt/ask-question.txt;
 touch txt/receive-result.txt;
 
 #The questions in the last round of Q&A will be temporarily stored here
-touch last-ask-question.txt;
+touch txt/last-ask-question.txt;
 ```
 
 <hr>
@@ -114,7 +114,7 @@ touch txt/ask-question.txt;
 touch txt/receive-result.txt;
 
 # 上一轮问答完毕中的提问会暂存在此处
-touch last-ask-question.txt;
+touch txt/last-ask-question.txt;
 
 ```
 
